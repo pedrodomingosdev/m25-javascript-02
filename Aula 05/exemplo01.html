@@ -4,12 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            background-color: aqua;
+        }
+        #videos video{
+            width: 300px;
+        }
+        .cor-vermelho{
+            color: red;
+        }
+    </style>
     <title>Meu primeiro HTML</title>
 </head>
 
 <body>
     <nav id="topo">
-        <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> | <a href="#midias">Midias</a> | <a href="#tabelas">Tabelas</a>
+        <a href="#formatacao" class="cor-vermelho">Formatação</a> | <a href="#listas">Listas</a> | <a href="#midias">Midias</a> | <a
+            href="#tabelas">Tabelas</a>
     </nav>
     <section id="formatacao">
         <header>
@@ -66,7 +78,7 @@
     </section>
     <section id="midias">
         <header>
-            <h4>Imagens</h4>
+            <h4 class="cor-vermelho">Imagens</h4>
         </header>
         <figure>
             <img src="https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/16_9/logosenai_E7TWIa3.jpg"
@@ -125,7 +137,9 @@
         </table>
     </section>
     <section id="formularios">
-        <header><h4>Formulários</h4></header>
+        <header>
+            <h4>Formulários</h4>
+        </header>
         <form action="#" method="post">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome">
@@ -136,7 +150,39 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
+    <section id="iframes">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G6EruIG3RLc?si=dXHapnWT1CeBPCxi"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+    </section>
+    <section id="outras-tags">
+        <progress value="70" max="100"></progress>
+        <meter value="0.6">60%</meter>
+        <time datetime="2025-09-20">20 de Setembro de 2025</time>
+        <code>console.log("Olá");</code>
+        <pre>
+            for i in range(5):
+            print(i)
+        </pre>
+    </section>
+    <section id="aside">
+        <aside>
+            <h3>Conteudo a parte</h3>
+        </aside>
+    </section>
     <a href="#topo">Ir para o topo</a>
+    <footer>
+        Linkedin: xxxxx| Facebook: xxxxxxxx | Whatsapp: xx xxxxx
+    </footer>
+    <script>
+        alert("Olá!");
+    </script>
 </body>
 
 </html>
