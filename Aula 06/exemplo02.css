@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h2 {
+    color: blue;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: beige;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: burlywood;
+}
+
+#uso-tabela {
+    background-color: beige;
+}
+
+#uso-tabela>h3 {
+    color: blue;
+}
+
+#uso-tabela table thead tr {
+    background-color: blue;
+    color: white;
+}
+
+#uso-tabela table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+#uso-tabela table tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+#uso-tabela table tbody tr:hover {
+    background-color: cadetblue;
+}
+
+#uso-formulario fieldset {
+    margin-top: 30px;
+}
+
+#uso-formulario form input:focus {
+    background-color: lightblue;
+}
+
+th,
+td {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3~p {
+    color: blueviolet;
+}
+
+h3+p {
+    color: #333
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    display: block;
+    width: 150px;
+}
+
+.tem-submenu:hover .submenu {
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: #ddd;
+}
+
+p[data-detalhe]{
+    color: #333;
+    text-decoration: underline;
+}
+
+p[data-detalhe="linha3"]{
+    background-color: aqua;
+}
