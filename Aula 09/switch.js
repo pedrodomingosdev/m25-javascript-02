@@ -12,3 +12,4 @@ switch(op){
     case 4: console.log("Escolheu Exclusão"); break;
     default: console.log("Escolheu a opção errada");
 }   
+ 
