@@ -1,3 +1,28 @@
 {
-    "Produtos": []
+  "Produtos": [
+    {
+      "id": 1,
+      "descricao": "Produto",
+      "saldo": "1",
+      "preco": "1"
+    },
+    {
+      "id": 2,
+      "descricao": "a",
+      "saldo": "1",
+      "preco": "1"
+    },
+    {
+      "id": 3,
+      "descricao": "2",
+      "saldo": "1",
+      "preco": "1"
+    },
+    {
+      "id": 4,
+      "descricao": "dadas",
+      "saldo": "1",
+      "preco": "1"
+    }
+  ]
 }
