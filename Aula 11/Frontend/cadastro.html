@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manutenção de Produtos</title>
+    <link rel="stylesheet" href="css/estilos-index.css">
 </head>
 <body>
-    <header>
-        <h2>Manutenção de Produtos</h2>
-    </header>
+    <header><h2>Manutenção de Produtos</h2></header>
     <section>
         <form action="#" method="post" name="form_prod">
             <input type="hidden" name="id" id="id" value="null">
             <fieldset>
                 <legend>Descrição do Produto</legend>
-                <label for="iddesc">Descrição do Produto: </label>
+                <label for="iddesc">Descrição do produto:</label>
                 <input type="text" name="descricao" id="iddesc">
             </fieldset>
             <fieldset>
                 <legend>Saldo do Produto</legend>
-                <label for="idsaldo">Saldo do Produto: </label>
+                <label for="idsaldo">Saldo do produto:</label>
                 <input type="number" name="saldo" id="idsaldo">
             </fieldset>
             <fieldset>
                 <legend>Preço do Produto</legend>
-                <label for="idpreco">Preço do Produto: </label>
+                <label for="idpreco">Preço do Produto:</label>
                 <input type="number" name="preco" id="idpreco" step="0.01">
             </fieldset>
-            <input type="submit" value="Gravar">&nbsp;&nbsp;
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Gravar" id="btnSubmit"> &nbsp; &nbsp;
+            <input type="reset" value="Limpar" id="btnReset">
         </form>
     </section>
+    <!-- Criando o modal para mostrar a mensagem de redirecionamento -->
+     <div class="modal" id="modal-cadastro">
+        <div class="modal-msg">
+            <h3>Registro Gravado com sucesso! Redirecionando para
+                página principal...
+            </h3>
+        </div>
+     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/cadastro.js"></script>
 </body>
